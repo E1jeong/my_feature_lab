@@ -9,6 +9,7 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.currentBackStackEntryAsState
 import androidx.navigation.compose.rememberNavController
+import com.example.myfeaturelab.clone_ui.CloneUiScreen
 import com.example.myfeaturelab.navigation.NavigationItem
 
 @Composable
@@ -23,7 +24,10 @@ fun MainNavHost() {
             startDestination = NavigationItem.MAIN
         ) {
             composable(route = NavigationItem.MAIN) {
-                MainScreen()
+                MainScreen(navController = navController)
+            }
+            composable(route = NavigationItem.CLONE_UI) {
+                CloneUiScreen()
             }
         }
     }

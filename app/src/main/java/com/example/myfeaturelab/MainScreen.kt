@@ -1,19 +1,36 @@
 package com.example.myfeaturelab
 
-import androidx.compose.material3.Surface
+import androidx.compose.foundation.layout.Arrangement
+import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.material3.Button
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
-import androidx.compose.ui.tooling.preview.Preview
+import androidx.compose.ui.Alignment
+import androidx.compose.ui.Modifier
+import androidx.navigation.NavHostController
+import com.example.myfeaturelab.navigation.NavigationItem
+import com.example.myfeaturelab.navigation.NavigationUtil
 
 @Composable
-fun MainScreen() {
-    Text("Main")
-}
-
-@Preview
-@Composable
-private fun MainScreenPreview() {
-    Surface {
-        MainScreen()
+fun MainScreen(navController: NavHostController) {
+    Column(
+        modifier = Modifier.fillMaxSize(),
+        verticalArrangement = Arrangement.Center,
+        horizontalAlignment = Alignment.CenterHorizontally
+    ) {
+        Button(
+            onClick = { NavigationUtil.navigate(navController, NavigationItem.CLONE_UI) }
+        ) {
+            Text(text = "Go to Clone UI")
+        }
     }
 }
+
+//@Preview
+//@Composable
+//private fun MainScreenPreview() {
+//    Surface {
+//        MainScreen()
+//    }
+//}
