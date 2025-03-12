@@ -9,13 +9,14 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.currentBackStackEntryAsState
 import androidx.navigation.compose.rememberNavController
-import com.example.myfeaturelab.clone_ui.CloneUiScreen
+import com.example.myfeaturelab.clone_ui.CloneUiNavHost
 import com.example.myfeaturelab.navigation.NavigationItem
 
 @Composable
 fun MainNavHost() {
     val navController = rememberNavController()
     val navBackStackEntry by navController.currentBackStackEntryAsState()
+    val currentRoute = navBackStackEntry?.destination?.route
 
     Surface {
         NavHost(
@@ -26,8 +27,8 @@ fun MainNavHost() {
             composable(route = NavigationItem.MAIN) {
                 MainScreen(navController = navController)
             }
-            composable(route = NavigationItem.CLONE_UI) {
-                CloneUiScreen()
+            composable(route = NavigationItem.CLONE_UI_NAV_HOST) {
+                CloneUiNavHost()
             }
         }
     }

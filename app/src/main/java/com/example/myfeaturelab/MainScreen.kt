@@ -20,7 +20,7 @@ fun MainScreen(navController: NavHostController) {
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
         Button(
-            onClick = { NavigationUtil.navigate(navController, NavigationItem.CLONE_UI) }
+            onClick = { NavigationUtil.navigate(navController, NavigationItem.CLONE_UI_NAV_HOST) }
         ) {
             Text(text = "Go to Clone UI")
         }
