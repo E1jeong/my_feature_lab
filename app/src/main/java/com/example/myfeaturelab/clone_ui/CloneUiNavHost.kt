@@ -23,7 +23,7 @@ fun CloneUiNavHost() {
 
     Surface {
         Scaffold(
-            topBar = {},
+            topBar = { CloneUiTopBar() },
             content = {
                 NavHost(
                     modifier = Modifier.padding(it),
