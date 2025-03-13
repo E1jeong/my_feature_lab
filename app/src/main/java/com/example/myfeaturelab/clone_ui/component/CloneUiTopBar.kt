@@ -1,4 +1,4 @@
-package com.example.myfeaturelab.clone_ui
+package com.example.myfeaturelab.clone_ui.component
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Box

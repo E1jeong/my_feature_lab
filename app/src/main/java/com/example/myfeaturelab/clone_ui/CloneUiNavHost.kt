@@ -10,6 +10,8 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.currentBackStackEntryAsState
 import androidx.navigation.compose.rememberNavController
+import com.example.myfeaturelab.clone_ui.component.CloneUiBottomBar
+import com.example.myfeaturelab.clone_ui.component.CloneUiTopBar
 import com.example.myfeaturelab.clone_ui.dummy_screen.EmailScreen
 import com.example.myfeaturelab.clone_ui.dummy_screen.SearchScreen
 import com.example.myfeaturelab.clone_ui.dummy_screen.SettingsScreen
