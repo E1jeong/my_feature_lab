@@ -31,7 +31,7 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import coil.compose.AsyncImage
 
-data class GameData(
+data class BigGameData(
     val isUpdate: Boolean,
     val gameComment: String,
     val bigImage: String,
@@ -44,8 +44,8 @@ data class GameData(
 
 @Composable
 fun BigGamePager() {
-    val gameDatas = listOf<GameData>(
-        GameData(
+    val gameDatas = listOf<BigGameData>(
+        BigGameData(
             true,
             "미래를 위하여",
             "https://picsum.photos/300/200",
@@ -55,7 +55,7 @@ fun BigGamePager() {
             "12",
             "4.5"
         ),
-        GameData(
+        BigGameData(
             false,
             "언제 대답해줌",
             "https://picsum.photos/300/201",
@@ -65,7 +65,7 @@ fun BigGamePager() {
             "8",
             "1.5"
         ),
-        GameData(
+        BigGameData(
             true,
             "떠나자",
             "https://picsum.photos/300/202",
@@ -75,7 +75,7 @@ fun BigGamePager() {
             "19",
             "4.9"
         ),
-        GameData(
+        BigGameData(
             false,
             "하하 호호",
             "https://picsum.photos/300/199",
@@ -85,7 +85,7 @@ fun BigGamePager() {
             "all",
             "3.5"
         ),
-        GameData(
+        BigGameData(
             false,
             "개발자 키우기",
             "https://picsum.photos/300/198",
