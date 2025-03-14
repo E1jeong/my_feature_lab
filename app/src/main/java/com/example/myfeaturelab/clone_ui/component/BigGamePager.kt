@@ -103,8 +103,8 @@ fun BigGamePager() {
         state = pagerState,
         modifier = Modifier
             .fillMaxWidth()
-            .padding(8.dp),
-        contentPadding = PaddingValues(horizontal = 20.dp),
+            .padding(12.dp),
+        contentPadding = PaddingValues(end = 20.dp),
         pageSpacing = 8.dp,
     ) { page ->
         Column(modifier = Modifier.fillMaxWidth()) {
