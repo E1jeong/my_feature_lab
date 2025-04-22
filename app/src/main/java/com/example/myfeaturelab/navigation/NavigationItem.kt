@@ -9,4 +9,6 @@ object NavigationItem {
     const val EMAIL = "EmailScreen"
     const val SEARCH = "SearchScreen"
     const val SETTINGS = "SettingsScreen"
+
+    const val CAMERA = "CameraScreen"
 }

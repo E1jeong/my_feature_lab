@@ -24,6 +24,12 @@ fun MainScreen(navController: NavHostController) {
         ) {
             Text(text = "Go to Clone UI")
         }
+
+        Button(
+            onClick = { NavigationUtil.navigate(navController, NavigationItem.CAMERA) }
+        ) {
+            Text(text = "Camera")
+        }
     }
 }
 
