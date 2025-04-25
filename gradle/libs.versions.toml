@@ -12,6 +12,7 @@ constraintlayout = "1.1.1"
 navigationCompose = "2.8.8"
 coil = "2.3.0"
 accompanist = "0.30.1"
+camera = "1.4.2"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -34,6 +35,13 @@ androidx-navigation-compose = { group = "androidx.navigation", name = "navigatio
 coil-compose = { group = "io.coil-kt", name = "coil-compose", version.ref = "coil" }
 
 accompanist-permissions = { module = "com.google.accompanist:accompanist-permissions", version.ref = "accompanist" }
+
+camera-core = { group = "androidx.camera", name = "camera-core", version.ref = "camera" }
+camera-camera2 = { group = "androidx.camera", name = "camera-camera2", version.ref = "camera" }
+camera-lifecycle = { group = "androidx.camera", name = "camera-lifecycle", version.ref = "camera" }
+camera-view = { group = "androidx.camera", name = "camera-view", version.ref = "camera" }
+mediapipe = { group = "com.google.mediapipe", name = "tasks-vision", version = "0.10.21" }
+opencv = { group = "org.opencv", name = "opencv", version = "4.9.0" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
