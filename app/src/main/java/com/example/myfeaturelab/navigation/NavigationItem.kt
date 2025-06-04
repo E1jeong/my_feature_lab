@@ -11,4 +11,6 @@ object NavigationItem {
     const val SETTINGS = "SettingsScreen"
 
     const val CAMERA = "CameraScreen"
+
+    const val CUSTOM_KEYBOARD = "CustomKeyboardScreen"
 }

@@ -30,6 +30,12 @@ fun MainScreen(navController: NavHostController) {
         ) {
             Text(text = "Camera")
         }
+
+        Button(
+            onClick = { NavigationUtil.navigate(navController, NavigationItem.CUSTOM_KEYBOARD) }
+        ) {
+            Text(text = "Custom keyboard")
+        }
     }
 }
 

@@ -13,6 +13,7 @@ import androidx.navigation.compose.currentBackStackEntryAsState
 import androidx.navigation.compose.rememberNavController
 import com.example.myfeaturelab.camera.CameraScreen
 import com.example.myfeaturelab.clone_ui.CloneUiNavHost
+import com.example.myfeaturelab.custom_keyboard.CustomKeyboardScreen
 import com.example.myfeaturelab.navigation.NavigationItem
 
 @RequiresApi(Build.VERSION_CODES.P)
@@ -36,6 +37,9 @@ fun MainNavHost() {
             }
             composable(route = NavigationItem.CAMERA) {
                 CameraScreen()
+            }
+            composable(route = NavigationItem.CUSTOM_KEYBOARD) {
+                CustomKeyboardScreen()
             }
         }
     }
