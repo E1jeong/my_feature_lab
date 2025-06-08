@@ -12,10 +12,10 @@ import com.example.myfeaturelab.clone_ui.component.BigGamePager
 import com.example.myfeaturelab.clone_ui.component.MenuHeader
 import com.example.myfeaturelab.clone_ui.component.MenuTabRow
 import com.example.myfeaturelab.clone_ui.component.SmallThreeGamePager
+import com.example.myfeaturelab.clone_ui.component.recommendation_top_5.RecomendationTop5
 
 @Composable
 fun HomeScreen() {
-
 
     Column(
         modifier = Modifier
@@ -26,5 +26,6 @@ fun HomeScreen() {
         BigGamePager()
         MenuHeader(modifier = Modifier.padding(top = 48.dp), category = "스폰서")
         SmallThreeGamePager()
+        RecomendationTop5()
     }
 }
