@@ -36,6 +36,12 @@ fun MainScreen(navController: NavHostController) {
         ) {
             Text(text = "Custom keyboard")
         }
+
+        Button(
+            onClick = { NavigationUtil.navigate(navController, NavigationItem.TOSS_PAY) }
+        ) {
+            Text(text = "Toss pay")
+        }
     }
 }
 

@@ -2,4 +2,8 @@
 <resources>
 
     <style name="Theme.MyFeatureLab" parent="android:Theme.Material.Light.NoActionBar" />
+    <style name="Theme.MyFeatureLab.AppCompatBridge" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- 필요시 색상만 최소로 지정 -->
+        <item name="android:statusBarColor">@android:color/transparent</item>
+    </style>
 </resources>

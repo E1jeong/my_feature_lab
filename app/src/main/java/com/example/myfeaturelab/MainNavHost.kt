@@ -15,10 +15,12 @@ import com.example.myfeaturelab.camera.CameraScreen
 import com.example.myfeaturelab.clone_ui.CloneUiNavHost
 import com.example.myfeaturelab.custom_keyboard.CustomKeyboardScreen
 import com.example.myfeaturelab.navigation.NavigationItem
+import com.example.myfeaturelab.pay.TossPayScreen
+import com.tosspayments.paymentsdk.PaymentWidget
 
 @RequiresApi(Build.VERSION_CODES.P)
 @Composable
-fun MainNavHost() {
+fun MainNavHost(paymentWidget: PaymentWidget) {
     val navController = rememberNavController()
     val navBackStackEntry by navController.currentBackStackEntryAsState()
     val currentRoute = navBackStackEntry?.destination?.route
@@ -40,6 +42,18 @@ fun MainNavHost() {
             }
             composable(route = NavigationItem.CUSTOM_KEYBOARD) {
                 CustomKeyboardScreen()
+            }
+            composable(route = NavigationItem.TOSS_PAY) {
+                TossPayScreen(
+                    paymentWidget = paymentWidget,
+                    amount = 5000L,
+                    onSuccess = { result ->
+                        println("결제 성공: ${result.paymentKey}")
+                    },
+                    onFail = { fail ->
+                        println("결제 실패: ${fail.errorMessage}")
+                    }
+                )
             }
         }
     }
